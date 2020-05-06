@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Profile</title>
+
+    <link href="Prof.css" rel="stylesheet" type="text/css" />
+    <script src="JavaScript.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+          rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">PardeepK</label>
+        <ul>
+            <li><a class="active" href="#About">About</a></li>
+            <li><a class="active" href="#experience">Experience</a></li>
+            <li><a class="active" href="#education">Education</a></li>
+
+            <li><a class="active" href="#tech_skill">Skills</a></li>
+            <li><a class="active" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="name">
+        <center>
+            <h1 style="color:white;font-size:30px;">PARDEEP KUMAR</h1>
+            <h2 style="color:black;font-size:20px;">SYSTEM ENGINEER</h2>
+        </center>
+
+
+    </section>
+    <br />
+
+    <section id="About">
+        <center>
+            <p style="font-size:25px;">About Me</p><br />
+            <p style="text-align:justify;">Hello, I'm Pardeep Kumar, a Full Stack Developer, from Dist. Patiala(Punjab). I am currently living in Bhubaneshwar(Odisha) working as a System Engineer at Infosys Ltd. </p>
+            <p style="text-align:justify;">I'm  passionate about Python, C#, Database, Data Analytics. I have the knowledge of .Net Frameworks, like ASP.Net, ADO.Net, ASP.Net MVC and Front-end technologies like HTML5, CSS3, Javascript. </p>
+        </center>
+
+    </section>
+    <br />
+    <br />
+
+    <section id="education" style="background:#1A2476">
+        <center><p>Education</p></center>
+
+        <br />
+
+        <div>
+            <section id="b_tech" style="background:white;">
+
+                <span id="clgname">M.M.Engineering College, MM(DU), Mullana</span>
+                <span id="passout">May,2019</span>
+                <p>Bachelor of Technology in Electronics & Communication Engineering</p>
+                <br />
+                <p>CGPA-9.03</p>
+            </section>
+            <br />
+            <section id="b_tech" style="background:white;">
+
+                <span id="clgname">Rising Star Academy, Rajnagar, New Delhi</span>
+                <span id="passout">April 2013-March 2015</span>
+                <p>Higher Secondary</p>
+                <br />
+                <p>Percentage-84.6%</p>
+            </section>
+            <br />
+            <section id="b_tech" style="background:white;">
+
+                <span id="clgname">Sant Ishar Singh Academy, Pehowa, Haryana </span>
+                <span id="passout">March 2013</span>
+                <p>Matriculation</p>
+                <br />
+                <p>CGPA-7.8</p>
+            </section>
+            <br />
+        </div>
+    </section>
+    <br />
+
+
+
+
+    <br />
+    <section id="tech_skill">
+        <center><p style="font-size:25px;">Technical Skills</p></center>
+        <br />
+        <div id="technical_Skills">
+
+            <br />
+
+            <section id="tech_skills_left">
+
+                <h5 id="left">Python</h5>
+                <h5 id="left">C#</h5>
+                <h5 id="left">MS SQL</h5>
+                <h5>Angular5</h5>
+
+            </section>
+            <section id="tech_skills_center">
+
+                <h5 id="right">Oracle SQL</h5>
+                <h5 id="right">Power BI</h5>
+                <h5 id="right">HTML & CSS</h5>
+
+
+            </section>
+            <section id="tech_skills_right">
+
+                <h5>Bootstrap</h5>
+                <h5>ASP.NET Core</h5>
+                <h5>ASP.NET MVC</h5>
+
+
+
+            </section>
+            <br />
+            <br />
+            <br />
+        </div>
+    </section>
+    <br />
+    <br />
+    <section id="experience">
+        <center><p id="exp" style="font-size:30px;">Experience</p></center>
+        <br />
+        <section id="full_time_Trai" style="background:white;">
+            <span id="companyName">Infosys ltd.</span>
+            <span id="duration">Feburary 2020- Present</span>
+            <p>Full-time</p>
+            <p id="designation">System Engineer</p>
+
+        </section>
+        <br />
+
+        <section id="full_time_Trai" style="background:white;">
+
+            <span id="companyName">Infosys ltd.</span>
+            <span id="duration">September 2019- January 2020</span>
+            <p>Full-time</p>
+            <p id="designation">System Engineer Trainee</p>
+            <br />
+            <p id="more">I have done my generic training in Python and Oracle database. I am trained in MS.NET and hands on experience in C# language and frameworks like ASP.NET API, ASP.NET Core, Angular5.</p>
+            <button type="button" id="buttonmore" onclick="Read()">Read more</button>
+            <script type="text/javascript">
+                var i = 0;
+                function Read() {
+                    if (!i) {
+                        document.getElementById("more").style.display = "inline";
+                        document.getElementById("buttonmore").innerHTML = "Read less";
+                        i = 1;
+                    }
+                    else {
+                        document.getElementById("more").style.display = "none";
+                        document.getElementById("buttonmore").innerHTML = "Read more";
+                        i = 0;
+                    }
+                }
+
+            </script>
+
+        </section>
+        <br />
+        <br />
+
+    </section>
+    <br />
+    <div id="imagecontact">
+        <center><p style="font-size:25px;  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Get in Touch</p></center>
+        <br />
+        <section id="Feedback">
+            <center>
+
+                <br />
+                <form>
+                    <input type="email" style="border:1px initial black; width:353px; height:30px;" id="emailId" name="email" placeholder="Your EmailId" /><br /><br />
+
+                    <textarea rows="5" cols="58" id="comments" style="border:1px initial black; " name="comment" placeholder="Your message"></textarea>
+                    <br />
+                    <input type="submit" style="border:1px initial black; background:#1A2476; color:white; width:354px; height:30px; " value="Send" />
+                </form>
+            </center>
+        </section>
+        <br />
+        <br />
+        <section id="contact">
+            <center>
+                <br />
+                <br />
+                <p>Contact No. :- (+91)8059413539</p>
+                <p>Email ID :- pardeepgarg127@gmail.com</p>
+            </center>
+
+        </section>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+
+    <div class="middle">
+
+
+
+        <a class="bttn" href="https://www.hackerrank.com/pardeep_kumar261?hr_r=1"><i class="fab fa-hackerrank"></i></a>
+
+        <a class="bttn" href="https://www.freecodecamp.org/fcce8fa747d-eef2-45fe-abf9-46e936c54039"><i class="fab fa-free-code-camp"></i></a>
+        <a class="bttn" href=""><i class="fab fa-google-plus"></i></a>
+        <a class="bttn" href="https://www.linkedin.com/in/pardeep-kumar-742329136/"><i class="fab fa-linkedin"></i></a>
+
+    </div>
+    <br />
+    <br />
+
+
+    <footer>
+        <p>Copyright &copy; 2020</p>
+    </footer>
+</body>
+</html>
