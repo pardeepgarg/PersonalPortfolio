@@ -75,7 +75,9 @@ a:hover {
 @media(max-width:858px) {
     .checkbtn {
         display: block;
+
     }
+
 
     ul {
         position: fixed;
@@ -85,7 +87,7 @@ a:hover {
         top: 80px;
         left: -100%;
         text-align: center;
-        transition: all 0.5s;
+        transition: all 5s;
     }
 
     nav ul li {
@@ -103,9 +105,32 @@ a:hover {
 
     #check:checked ~ ul {
         left:inherit;
+        
     }
 }
-
+#your_name {
+    color:red;font-size:30px;
+}
+#desig{
+    color:white;
+    font-size:20px;
+}
+#designation {
+    color: black;
+    font-size: 12px;
+}
+@media(max-width:858px){
+    #your_name {
+        padding-left: 10%;
+       
+        text-align: left;
+    }
+    #desig {
+        padding-left: 14%;
+        text-align: left;
+        padding-bottom: 6%;
+    }
+}
 .responsive {
     background: url('Web_deve.jpg') center no-repeat;
     background-size: 100% 100%;
