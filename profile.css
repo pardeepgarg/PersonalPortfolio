@@ -12,7 +12,7 @@ body {
     font-family: Arial;
     
 }
-label.logo a{
+.logo a{
     color:white;
 }
 nav {
@@ -183,6 +183,17 @@ a:hover {
     }
     #helloPardeep{
         margin:0px;
+    }
+}
+@media(min-width:858px) {
+
+    #About {
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+
+    #helloPardeep {
+        margin: 0px;
     }
 }
 
