@@ -12,7 +12,9 @@ body {
     font-family: Arial;
     
 }
-
+.logo a{
+    color:white;
+}
 nav {
     background: #1A2476;
     width: 100%;
