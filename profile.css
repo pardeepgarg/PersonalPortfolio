@@ -214,6 +214,17 @@ a:hover {
 #description:{
     padding-bottom:2px;
 }
+@media(max-width:858px){
+    #b_tech{
+        margin-left:10%;
+        margin-right:10%;
+    }
+    #full_time_Trai {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+}
 #more{
     display:none;
     font-size:15px;
