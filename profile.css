@@ -139,17 +139,19 @@ a:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 40%;
     margin-right: 40%;
+
 }
 #helloPardeep {
     text-align:justify;
 }
 #aboutme {
-    font-size:16px;
+    font-size:25px;
 }
 @media(max-width:858px) {
-    #aboutme {
-        font-size:16px;
-       
+   
+    #About {
+        margin-left: 15%;
+        margin-right: 15%;
     }
     #helloPardeep{
         margin:0px;
